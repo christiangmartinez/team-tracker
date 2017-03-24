@@ -1,0 +1,17 @@
+<!--team-members-form.vtl-->
+<h3>$team.getName()</h3>
+<div class="row">
+  <form action="/teams/:team_id/members/:member_id" method="post">
+    <input id="memberId" name="memberId" type="hidden" value="$member.getId()">
+    <label for="memberName">Member name</label>
+    <input id="memberName" name="memberName" type="text" class="form-control">
+    <label for="work">Member workplace</label>
+    <input id="work" name="work" type="text" class="form-control">
+    <label for="specialty">Member specialty</label>
+    <input id="specialty" name="specialty" type="text" class="form-control">
+    <label for="home">Member home</label>
+    <input id="home" name="home" type="text" class="form-control">
+    <button type="submit" class="btn btn-success">Add team member</button>
+  </form>
+</div>
+<!--team-members-form.vtl-->

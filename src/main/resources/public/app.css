@@ -1,3 +1,7 @@
-small {
+h1 small {
   font-size: 12px;
+}
+
+ul {
+  list-style: none;
 }
