@@ -15,7 +15,7 @@ _This application will allow the user to keep track of teams and view members ba
 | Hold value for a team name | Team 1 | Team1  |
 | Create a page for each team | Team 1 | Team 1|
 | Team pages will hold values for members | Team 1, member 1 | Team 1, member 1|
-
+Create page for each team member | member 1 | member 1 page |
 
 ## Setup/Installation Requirements
 
