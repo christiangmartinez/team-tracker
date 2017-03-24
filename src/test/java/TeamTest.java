@@ -48,4 +48,18 @@ public class TeamTest {
     assertEquals(secondTeam, Team.find(secondTeam.getId()));
   }
 
+  @Test
+  public void getMembers_initiallyReturnsEmptyList_ArrayList() {
+    Team testTeam = new Team("best team");
+    assertEquals(0, testTeam.getMembers().size());
+  }
+
+  @Test
+  public void addMember_addsMemberToTeam_true() {
+    Team testTeam = new Team("best team");
+    Member testMember = new Member("Chulo", "Chulo's house", "Being a dog", "Portland");
+    testTeam.addMember(testMember);
+    assertTrue(testTeam.getMembers().contains(testMember));
+  }
+
 }
