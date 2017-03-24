@@ -2,8 +2,9 @@
 <h3>$team.getName()</h3>
 <p><a href="/teams/$team.getId()/members/new">Add a new member</a></p>
 <p>Members:</p>
-
 <ul>
-
+  #foreach ($member in $members)
+  <li><a href="/team/$team.getId()/members/$member.getId()">$member.getName()</a></li>
+  #end
 </ul>
 <!--team.vtl-->
