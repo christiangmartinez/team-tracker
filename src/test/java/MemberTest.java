@@ -15,7 +15,7 @@ public class MemberTest {
   }
 
   @Test
-  public void getterMethods_returnMemberVariables_mVariables() {
+  public void member_memberInstatiatesWithVariables_mVariables() {
     Member testMember = new Member("Chulo", "Chulo's house", "Being a dog", "Portland");
     assertEquals("Chulo", testMember.getName());
     assertEquals("Chulo's house", testMember.getWork());
@@ -40,7 +40,7 @@ public class MemberTest {
   }
 
   @Test
-  public void find_returnsMemberbyId_secondMember() {
+  public void find_returnsMemberById_secondMember() {
     Member firstMember = new Member("Chulo", "Chulo's house", "Being a dog", "Portland");
     Member secondMember = new Member("Valentina", "Valentina's house", "Being a cat", "Portland");
     assertEquals(secondMember, Member.find(secondMember.getId()));
